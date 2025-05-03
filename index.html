@@ -1,0 +1,109 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Youssef Imicht</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <button id="theme-toggle"> Mode sombre</button>
+
+  <div class="cv-container">
+    <aside class="sidebar">
+      <div class="photo-wrapper">
+        <img src="unnamed.jpg" alt="Youssef Imicht">
+      </div>
+      <h2 class="name">Youssef Imicht</h2>
+      <p class="role">Directeur Général</p>
+      <div class="contact-info">
+        <h3>Contact</h3>
+        <p><i class="fas fa-phone"></i> +212 601 235 899</p>
+        <p><i class="fas fa-envelope"></i> youssefimcht96@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Quartier Salam El Jadid, Ouarzazate</p>
+      </div>
+      <div class="languages">
+        <h3>Langues</h3>
+        <ul>
+          <li>Arabe (natif)</li>
+          <li>Français (courant)</li>
+          <li>Anglais (intermédiaire)</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3>Qualités</h3>
+        <ul>
+          <li>Leadership & Gestion d'équipe</li>
+          <li>Organisation & Planification</li>
+          <li>Résolution de problèmes</li>
+          <li>Communication efficace</li>
+        </ul>
+      </div>
+    </aside>
+    <main class="main-content">
+      <section class="summary">
+        <h2>À propos</h2>
+        <p>Manager expérimenté dans la gestion générale, financière et comptable d'entreprises spécialisées en métallerie, fer et inox.</p>
+      </section>
+      <section class="section">
+        <h2>Éducation</h2>
+        <div class="item">
+          <h3>Bac +2 en Mathématiques & Informatique</h3>
+          <span>2018 - 2020</span>
+        </div>
+        <div class="item">
+          <h3>Baccalauréat en Sciences Physiques</h3>
+          <span>2016</span>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Compétences</h2>
+        <ul>
+          <li>Gestion financière & comptabilité</li>
+          <li>Analyse de trésorerie & flux de trésorerie</li>
+          <li>Excel avancé, PowerPoint, Word</li>
+          <li>Négociation & relation fournisseurs</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Expériences</h2>
+        <div class="item">
+          <h3>Directeur Général - ALO FLAM</h3>
+          <span>Depuis 2021</span>
+          <p>Administration générale, gestion financière et comptabilité.</p>
+        </div>
+        <div class="item">
+          <h3>Responsable Administration & Comptabilité - Isajad Salr</h3>
+          <span>2021</span>
+          <p>Suivi des comptes, factures et paiements.</p>
+        </div>
+        <div class="item">
+          <h3>Comptable Marchandises - Roch Plastique</h3>
+          <span>2020</span>
+          <p>Gestion des stocks et facturation.</p>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Centres d'intérêt</h2>
+        <ul>
+          <li>Lecture & formation continue</li>
+          <li>Voyages culturels</li>
+          <li>Sports & fitness</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleButton.textContent = document.body.classList.contains('dark-mode')
+        ? ' Mode clair'
+        : ' Mode sombre';
+    });
+  </script>
+  
+</body>
+</html>
